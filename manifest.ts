@@ -2,10 +2,9 @@ import packageJson from "./package.json";
 
 const manifest: chrome.runtime.ManifestV3 = {
   manifest_version: 3,
-  name: packageJson.name,
+  name: "Zeuada Home",
   version: packageJson.version,
   description: packageJson.description,
-  options_page: "src/pages/options/index.html",
   background: { service_worker: "src/pages/background/index.js" },
   action: {
     default_popup: "src/pages/popup/index.html",
@@ -24,7 +23,6 @@ const manifest: chrome.runtime.ManifestV3 = {
       css: ["assets/css/contentStyle.chunk.css"],
     },
   ],
-  devtools_page: "src/pages/devtools/index.html",
   web_accessible_resources: [
     {
       resources: [

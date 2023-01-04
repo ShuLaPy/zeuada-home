@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Newtab from "@pages/newtab/Newtab";
+import Home from "@pages/newtab/containers/Home/Home";
 import "@pages/newtab/index.css";
 import refreshOnUpdate from "virtual:reload-on-update-in-view";
 
@@ -12,7 +12,7 @@ function init() {
     throw new Error("Can not find AppContainer");
   }
   const root = createRoot(appContainer);
-  root.render(<Newtab />);
+  root.render(<Home />);
 }
 
 init();
