@@ -1,10 +1,14 @@
-import { Box } from "@chakra-ui/react";
+import "./BackgroundImage.scss";
 
 const BackgroundImage = () => {
   return (
-    <Box bg="tomato" w="100vw" h="100vh" color="brand.900">
-      BackgroundImage
-    </Box>
+    <video
+      className="background-video-player"
+      autoPlay
+      loop
+      muted
+      src="https://cdn.flixel.com/flixel/i8ppsbc03dcwnw7kwt00.tablet.mp4"
+    />
   );
 };
 
